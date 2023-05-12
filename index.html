@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <h1>Sun Pizza</h1>
+        <div class="navigation">
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Contact</a></li>
+                <li class="special"><a href="">Specials & Coupons</a></li>
+            </ul>
+        </div>
+        <img src="Hamburger_icon.png" alt="" class="menu_burger">
+    </nav>
+    <section class="milieu">
+        <div class="enseigne">
+            <h2>Sun Pizza</h2>
+            <img src="burger 1.png" alt="">
+        </div>
+        <div class="lettres">
+            <h3>Localisation : Bois d'Olive</h3>
+            <h4>Adresse : 4 Bis Chem. Patissier <br> Saint-Pierre 97410, La Réunion</h4>
+        </div>
+    </section>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu_burger")
+    const naviGation = document.querySelector(".navigation")
+
+    menuHamburger.addEventListener('click',()=>{
+    naviGation.classList.toggle('mobile-menu')
+    })
+</script>
+</html>
